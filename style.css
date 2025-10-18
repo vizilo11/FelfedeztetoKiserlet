@@ -1,0 +1,78 @@
+/* 1. Global Reset & Basic Setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Makes padding & border not increase total width/height */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6; /* Very light gray/off-white background */
+    color: #333; /* Dark gray text for readability */
+    min-height: 100vh;
+    display: flex; /* Setup for centering content */
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+}
+
+/* 2. Header Styling */
+header {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #ffffff; /* White header background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Very subtle bottom shadow */
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #3f51b5; /* A pleasant blue for the title */
+    font-size: 2.5em;
+    font-weight: 300; /* Lighter font weight for a modern look */
+}
+
+/* 3. The Main "Fancy" Card */
+.card {
+    width: 90%;
+    max-width: 500px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* More pronounced, but soft shadow */
+    text-align: center;
+    transform: translateY(0); /* For subtle hover effect later */
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2); /* Shadow grows on hover */
+    transform: translateY(-2px); /* Card slightly lifts */
+}
+
+h2 {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: #666;
+}
+
+/* 4. Button Styling */
+button {
+    background-color: #3f51b5; /* Primary blue color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #303f9f; /* Slightly darker blue on hover */
+}
